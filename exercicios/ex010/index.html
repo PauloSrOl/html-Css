@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio></h1>
+    <p>vamos aprender a reproduzir áudios em HTML5 de uma maneira facil</p>
+    <audio src="midia/10convert.com_Fleetwood-Mac-The-Chain_JDG2m5hN1vo.mp3" controls></audio>
+    <p>Agora vamos aprender a colocar audio de uma maneira mis completa</p>
+
+    <audio preload="metadata" controls>
+        <source src="midia/10convert.com_Fleetwood-Mac-The-Chain_JDG2m5hN1vo.mp3" type="audio/mpeg">
+        <source src="midia/10convert.com_Fleetwood-Mac-The-Chain_JDG2m5hN1vo.ogg" type="audio/ogg">
+        <source src="midia/10convert.com_Fleetwood-Mac-The-Chain_JDG2m5hN1vo.wav" type="audio/wav">
+    </audio>
+    <p>se seu navegador não tem suporte para áudio - <a href="midia/10convert.com_Fleetwood-Mac-The-Chain_JDG2m5hN1vo.mp3" rel="external" target="_blank"  download="_Fleetwood=Mac-The=Chain_JDG2m5hN1vo.mp3" type="audio/mpeg">clique aqui para fazer o download do mp3.</a></p>
+    <!--Outros formatos de audio que suporta MP3, WAV, OGG-->
+
+</body>
+</html>
